@@ -2,7 +2,7 @@
 
 Retrieves a loaded DLL's base address by walking the **Process Environment Block** (PEB) directly, without calling `GetModuleHandleA`. **This technique is well-known** and already widely used in malware and offensive tooling, this is **just my own implementation of it**, built from scratch to learn how PE export tables work.
 
-This is the first step of any WinAPI-free resolution chain:
+This is the first step of my WinAPI-free resolution chain:
 
 ```
 PEB walk → DllBase
